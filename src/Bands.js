@@ -9,7 +9,7 @@ export default class Bands extends React.Component {
                 'Migos',
                 'Santigold',
                 'Kid Cudi',
-                'OutCast'
+                'OutKast'
             ]
         }
     }
@@ -17,7 +17,7 @@ export default class Bands extends React.Component {
         return (
            <ul> 
                {
-                   this.state.bands.map((band) => (<li>{band}</li>))
+                   this.state.bands.map((band, i) => (<li key={i}>{band}</li>))
                 }
             </ul>
            )
