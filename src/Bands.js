@@ -1,10 +1,5 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom';
-import KidA from './albums/KidA';
-import Culture from './albums/Culture';
-import ManOn from './albums/ManOn';
-import ATLiens from './albums/ATLiens';
-import MasterOf from './albums/MasterOf';
 
 export default class Bands extends React.Component {
     constructor(props) {
@@ -24,20 +19,21 @@ export default class Bands extends React.Component {
         return (
            <div> 
                <br />
-               <Link to="/radiohead/kida">Radiohead</Link>
-               <Route path="/radiohead/kida" component={KidA} />
+               <Link to="/kida">Radiohead</Link>
                <br />
-               <Link to="/migos/culture">Migos</Link>
-               <Route path="/migos/culture" component={Culture} />
+               <Link to="/masterof">Santigold</Link>
                <br />
-               <Link to="/santigold/masterof">Santigold</Link>
-               <Route path="/santigold/masterof" component={MasterOf} />
+               <Link to="/culture">Migos</Link>
                <br />
-               <Link to="/kidcudi/manon">Kid Cudi</Link>
-               <Route path="/kidcudi/manon" component={ManOn} />
+               <Link to="/manon">Kid Cudi</Link>
                <br />
-               <Link to="/outkast/atliens">OutKast</Link>
-               <Route path="/outkast/atliens" component={ATLiens} />
+               <Link to="/atliens">OutKast</Link>
+               <br />
+               <Link to="/">Home</Link>
+              
+               
+               
+               
            </div>
            )
            

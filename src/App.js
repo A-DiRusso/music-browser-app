@@ -9,6 +9,13 @@ import {
   Switch
 } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
+import Radiohead from './Radiohead';
+import KidA from './albums/KidA';
+import Culture from './albums/Culture';
+import ManOn from './albums/ManOn';
+import ATLiens from './albums/ATLiens';
+import MasterOf from './albums/MasterOf';
+
 
 function App() {
   return (
@@ -18,10 +25,17 @@ function App() {
       <Link to="/bands">Bands</Link>
       <Link to="albums">Albums</Link>
       
+
      <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/bands" component={Bands} />
       <Route path="/albums" component={Albums} />
+      <Route path="/radiohead" component={KidA} />
+      <Route path="/kida" component={KidA} />
+      <Route path="/culture" component={Culture} />
+      <Route path="/masterof" component={MasterOf} />
+      <Route path="/manon" component={ManOn} />
+      <Route path="/atliens" component={ATLiens} />
       <Route component={PageNotFound} />
      </Switch>
     
