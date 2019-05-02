@@ -9,12 +9,11 @@ import {
   Switch
 } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
-import Radiohead from './Radiohead';
-import KidA from './albums/KidA';
 import Culture from './albums/Culture';
 import ManOn from './albums/ManOn';
 import ATLiens from './albums/ATLiens';
 import MasterOf from './albums/MasterOf';
+import Radiohead from './Radiohead';
 
 
 function App() {
@@ -30,8 +29,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/bands" component={Bands} />
       <Route path="/albums" component={Albums} />
-      <Route path="/radiohead" component={KidA} />
-      <Route path="/kida" component={KidA} />
+      <Route path="/radiohead" component={Radiohead} />
       <Route path="/culture" component={Culture} />
       <Route path="/masterof" component={MasterOf} />
       <Route path="/manon" component={ManOn} />

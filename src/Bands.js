@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Bands extends React.Component {
     constructor(props) {
@@ -19,7 +19,7 @@ export default class Bands extends React.Component {
         return (
            <div> 
                <br />
-               <Link to="/kida">Radiohead</Link>
+               <Link to="/radiohead">Radiohead</Link>
                <br />
                <Link to="/masterof">Santigold</Link>
                <br />
