@@ -34,7 +34,7 @@ export default class Albums extends React.Component {
                         'Aquemini'
                     ]
 
-          }
+          },
 
       }
     }

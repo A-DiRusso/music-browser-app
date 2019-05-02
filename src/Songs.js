@@ -18,7 +18,7 @@ export default class Songs extends React.Component {
           passion: ['Frequency', 'By Design'],
           southernplaya: ['Hootie Hoo', 'Player\'s Ball'],
           atliens: ['Elevators', 'Decatur Psalm'],
-          aquemini: ['Rosa Parks', 'West Savannah']
+          aquemini: ['Rosa Parks', 'West Savannah'],
 
       }
   }
@@ -26,7 +26,7 @@ export default class Songs extends React.Component {
       console.log(this.state)
     return (
         <div>
-          <h2>How to Disappear Completely</h2>
+          
         </div>
       )
     
