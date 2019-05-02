@@ -38,8 +38,8 @@ export default class Albums extends React.Component {
 
       }
     }
-    render() {
-        // console.log(this.state.migos.albums)
+  render() {
+        
     return (
        
            <ul>
