@@ -8,6 +8,7 @@ import {
   Link,
   Switch
 } from 'react-router-dom';
+import PageNotFound from './PageNotFound';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/bands" component={Bands} />
       <Route path="/albums" component={Albums} />
+      <Route component={PageNotFound} />
      </Switch>
     
       </header>

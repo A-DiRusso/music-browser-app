@@ -1,9 +1,5 @@
-import React from 'react'
-import KidA from './albums/KidA';
-import Culture from './albums/Culture';
-import MasterOf from './albums/MasterOf';
-import ManOn from './albums/ManOn';
-import ATLiens from './albums/ATLiens';
+import React from 'react';
+// import { Link, Route } from 'react-router-dom';
 
 export default class Albums extends React.Component {
   constructor(props) {
@@ -56,17 +52,7 @@ export default class Albums extends React.Component {
                 { this.state.outkast.albums.map((album, i) => (<li key={i}>{album}</li>)) }
 
            <div>
-             <br />
-             <br />
-              <KidA />
-              <br />
-              <Culture />
-              <br />
-              <MasterOf />
-              <br />
-              <ManOn />
-              <br />              
-              <ATLiens />
+       
            </div> 
            </ul>
       )       
