@@ -9,11 +9,11 @@ import {
   Switch
 } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
-import Culture from './albums/Culture';
-import ManOn from './albums/ManOn';
-import ATLiens from './albums/ATLiens';
-import MasterOf from './albums/MasterOf';
 import Radiohead from './Radiohead';
+import Migos from './Migos';
+import Santigold from './Santigold';
+import KidCudi from './KidCudi';
+import OutKast from './OutKast';
 
 
 function App() {
@@ -30,10 +30,10 @@ function App() {
       <Route path="/bands" component={Bands} />
       <Route path="/albums" component={Albums} />
       <Route path="/radiohead" component={Radiohead} />
-      <Route path="/culture" component={Culture} />
-      <Route path="/masterof" component={MasterOf} />
-      <Route path="/manon" component={ManOn} />
-      <Route path="/atliens" component={ATLiens} />
+      <Route path="/migos" component={Migos} />
+      <Route path="/santigold" component={Santigold} />
+      <Route path="/kidcudi" component={KidCudi} />
+      <Route path="/outkast" component={OutKast} />
       <Route component={PageNotFound} />
      </Switch>
     

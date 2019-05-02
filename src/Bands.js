@@ -21,15 +21,14 @@ export default class Bands extends React.Component {
                <br />
                <Link to="/radiohead">Radiohead</Link>
                <br />
-               <Link to="/masterof">Santigold</Link>
+               <Link to="/migos">Migos</Link>
                <br />
-               <Link to="/culture">Migos</Link>
+               <Link to="/santigold">Santigold</Link>
                <br />
-               <Link to="/manon">Kid Cudi</Link>
+               <Link to="/kidcudi">Kid Cudi</Link>
                <br />
-               <Link to="/atliens">OutKast</Link>
-               <br />
-               <Link to="/">Home</Link>
+               <Link to="/outkast">OutKast</Link>
+              
               
                
                

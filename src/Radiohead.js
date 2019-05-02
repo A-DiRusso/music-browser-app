@@ -4,9 +4,9 @@ class Radiohead extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            album: {
+            albums: {
                 name: 'Kid A',
-                songs: ['How to Disappear Completely', 'Motion Picture Soundtrack']
+                songs: ['How to Disappear Completely', 'Motion Picture Soundtrack'],
 
             }
         }
@@ -17,7 +17,7 @@ class Radiohead extends React.Component {
             <h3>Radiohead</h3>
             <ul>
                 
-                    {this.state.album.songs.map((song, i ) => (<li key={i}>{this.state.album.name} : {song}</li>))}
+                    {this.state.albums.songs.map((song, i ) => (<li key={i}>{this.state.albums.name} : {song}</li>))}
                 
             </ul>
         </div>
