@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class OutKast extends Component {
     constructor(props) {
@@ -18,6 +19,7 @@ export default class OutKast extends Component {
                 <ul>
                 {this.state.albums.songs.map((song, i) => (<li key={i}>{this.state.albums.name} : {song}</li>))}
             </ul>
+            <Link to="/bands">Back to Bands</Link>
         </div>
         
       )

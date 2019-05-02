@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Bands from './Bands';
-import Albums from './Albums';
+// import Albums from './Albums';
 import Home from './Home'
 import {
   Route,
@@ -22,13 +22,13 @@ function App() {
       <header className="App-header">
       <Link to="/">Home</Link>
       <Link to="/bands">Bands</Link>
-      <Link to="albums">Albums</Link>
+      {/* <Link to="albums">Albums</Link> */}
       
 
      <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/bands" component={Bands} />
-      <Route path="/albums" component={Albums} />
+      {/* <Route path="/albums" component={Albums} /> */}
       <Route path="/radiohead" component={Radiohead} />
       <Route path="/migos" component={Migos} />
       <Route path="/santigold" component={Santigold} />

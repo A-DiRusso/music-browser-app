@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 class Radiohead extends React.Component {
     constructor(props) {
@@ -20,6 +21,7 @@ class Radiohead extends React.Component {
                     {this.state.albums.songs.map((song, i ) => (<li key={i}>{this.state.albums.name} : {song}</li>))}
                 
             </ul>
+            <Link to="/bands">Back to Bands</Link>
         </div>
       )
     }
