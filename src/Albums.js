@@ -1,4 +1,9 @@
 import React from 'react'
+import KidA from './albums/KidA';
+import Culture from './albums/Culture';
+import MasterOf from './albums/MasterOf';
+import ManOn from './albums/ManOn';
+import ATLiens from './albums/ATLiens';
 
 export default class Albums extends React.Component {
   constructor(props) {
@@ -49,7 +54,14 @@ export default class Albums extends React.Component {
                 { this.state.kidcudi.albums.map((album, i) => (<li key={i}>{album}</li>)) }
                 { this.state.outkast.albums.map((album, i) => (<li key={i}>{album}</li>)) }
 
-           </ul> 
+           <div>
+              <KidA />
+              <Culture />
+              <MasterOf />
+              <ManOn />
+              <ATLiens />
+           </div> 
+           </ul>
       )       
     
   }  

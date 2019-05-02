@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import Bands from './Bands';
 import Albums from './Albums';
-import Songs from './Songs';
-import KidA from './KidA';
-import Culture from './Culture';
-import MasterOf from './MasterOf';
-import ManOn from './ManOn';
-import ATLiens from './ATLiens';
+// import Songs from './Songs';
+// import KidA from './albums/KidA';
+// import Culture from './albums/Culture';
+// import MasterOf from './albums/MasterOf';
+// import ManOn from './albums/ManOn';
+// import ATLiens from './albums/ATLiens';
 
 function App() {
   return (
@@ -15,12 +15,8 @@ function App() {
       <header className="App-header">
       <Bands />
       <Albums />
-      <Songs />
-      <KidA />
-      <Culture />
-      <MasterOf />
-      <ManOn />
-      <ATLiens />
+     
+    
       </header>
     </div>
   );
