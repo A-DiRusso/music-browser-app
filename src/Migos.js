@@ -13,12 +13,16 @@ class Migos extends React.Component {
     }
   }
   render () {
+    const albumsArray = Object.values(this.state.albums);
+    let songsArray = albumsArray.splice(1);
+    let albumArray = albumsArray.pop();
+    const migosSongs = songsArray[0].map((song, i) => (<li key={i}>{song}</li>))
+
       return (
         <div>
           <h3>Migos</h3>
-          <ul>
-              {this.state.albums.songs.map((song, i) => (<li key={i}>{this.state.albums.name} : {song}</li>))}
-          </ul>
+          <h4>{albumArray}</h4>
+          <ul>{migosSongs}</ul>
           <Link to="/bands">Back to Bands</Link>
         </div>
       )

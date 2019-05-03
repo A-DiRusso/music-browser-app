@@ -23,21 +23,17 @@ class Radiohead extends React.Component {
     }
     render() {
         let albumsArray = Object.values(this.state.albums[0]);
-        console.log(albumsArray)
         let songsArray = albumsArray.splice(1);
         let albumArray = albumsArray.pop();
-        let songSpread = [...songsArray];
-        console.log(albumArray);
-        console.log('songsArray', songsArray);
+        const radioheadSongs = songsArray[0].map((song, i) => <li key={i}>{song}</li>)
+
+        
+        //Do the Mapping up here keep the JSX clean 
       return (
         <div>
             <h3>Radiohead</h3>
             <h4>{albumArray}</h4>
-            <ul>
-                    
-                    {songsArray[0].map((song, i) => <li key={i}>{song}</li>)}
-                
-            </ul>
+            <ul>{radioheadSongs}</ul>
             <Link to="/bands">Back to Bands</Link>
         </div>
       )
