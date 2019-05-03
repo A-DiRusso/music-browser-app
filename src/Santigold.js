@@ -13,11 +13,15 @@ export default class Santigold extends Component {
         }
     }
     render() {
+      const albumName = this.state.albums.name;
+      const santigoldSongs = this.state.albums.songs.map((song, i) => (<li key={i}>{song}</li>))
+
       return (
           <div>
                 <h3>Santigold</h3>
+                <h4>{albumName}</h4>
                 <ul>
-                    {this.state.albums.songs.map((song, i) => (<li key={i}>{this.state.albums.name} : {song}</li>))}
+                    {santigoldSongs}
                 </ul>
                 <Link to="/bands">Back to Bands</Link>
           </div>
